@@ -3,15 +3,6 @@
 
 
 
-
-> ##  👀 微信扫码体验小程序
-
-![](https://cdn.qingnian8.com/public/myCloudPic/chicken-soup/soupCode.jpg)
-
-
-
-
-
 > ## 📦 简单部署即可商用
 
 ### 1.将项目在HBuilder软件打开
@@ -50,6 +41,3 @@ npm install
 
 
 
-## 🚀 如果想要学习技术，可以看下面视频
-
-鸡汤来喽uniapp+uniCloud一体式微信小程序开发，[传送门](https://www.bilibili.com/video/BV1qJ4m1K7iN/)
