@@ -1,0 +1,118 @@
+/* [z-paging]公用的静态css资源 */
+.zp-line-loading-image.data-v-8cc5c400 {
+
+	animation: loading-flower-8cc5c400 1s steps(12) infinite;
+
+	color: #666666;
+}
+.zp-line-loading-image-rpx.data-v-8cc5c400 {
+	margin-right: 8rpx;
+	width: 34rpx;
+	height: 34rpx;
+}
+.zp-line-loading-image-px.data-v-8cc5c400 {
+	margin-right: 4px;
+	width: 17px;
+	height: 17px;
+}
+.zp-loading-image-ios-rpx.data-v-8cc5c400 {
+	width: 40rpx;
+	height: 40rpx;
+}
+.zp-loading-image-ios-px.data-v-8cc5c400 {
+	width: 20px;
+	height: 20px;
+}
+.zp-loading-image-android-rpx.data-v-8cc5c400 {
+	width: 34rpx;
+	height: 34rpx;
+}
+.zp-loading-image-android-px.data-v-8cc5c400 {
+	width: 17px;
+	height: 17px;
+}
+@keyframes loading-flower-8cc5c400 {
+0% {
+		transform: rotate(0deg);
+}
+to {
+		transform: rotate(1turn);
+}
+}
+.zp-l-container.data-v-8cc5c400 {
+
+		clear: both;
+		display: flex;
+
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+}
+.zp-l-container-rpx.data-v-8cc5c400 {
+		height: 80rpx;
+		font-size: 27rpx;
+}
+.zp-l-container-px.data-v-8cc5c400 {
+		height: 40px;
+		font-size: 14px;
+}
+.zp-l-line-loading-custom-image.data-v-8cc5c400 {
+		color: #a4a4a4;
+}
+.zp-l-line-loading-custom-image-rpx.data-v-8cc5c400 {
+		margin-right: 8rpx;
+		width: 28rpx;
+		height: 28rpx;
+}
+.zp-l-line-loading-custom-image-px.data-v-8cc5c400 {
+		margin-right: 4px;
+		width: 14px;
+		height: 14px;
+}
+.zp-l-line-loading-custom-image-animated.data-v-8cc5c400{
+
+		animation: loading-circle-8cc5c400 1s linear infinite;
+}
+.zp-l-circle-loading-view.data-v-8cc5c400 {
+		border: 3rpx solid #dddddd;
+		border-radius: 50%;
+
+		animation: loading-circle-8cc5c400 1s linear infinite;
+}
+.zp-l-circle-loading-view-rpx.data-v-8cc5c400 {
+		margin-right: 8rpx;
+		width: 23rpx;
+		height: 23rpx;
+}
+.zp-l-circle-loading-view-px.data-v-8cc5c400 {
+		margin-right: 4px;
+		width: 12px;
+		height: 12px;
+}
+.zp-l-text-rpx.data-v-8cc5c400 {
+		font-size: 30rpx;
+		margin: 0rpx 6rpx;
+}
+.zp-l-text-px.data-v-8cc5c400 {
+		font-size: 15px;
+		margin: 0px 3px;
+}
+.zp-l-line-rpx.data-v-8cc5c400 {
+		height: 1px;
+		width: 100rpx;
+		margin: 0rpx 10rpx;
+}
+.zp-l-line-px.data-v-8cc5c400 {
+		height: 1px;
+		width: 50px;
+		margin: 0rpx 5px;
+}
+@keyframes loading-circle-8cc5c400 {
+0% {
+			transform: rotate(0deg);
+}
+100% {
+			transform: rotate(360deg);
+}
+}
+

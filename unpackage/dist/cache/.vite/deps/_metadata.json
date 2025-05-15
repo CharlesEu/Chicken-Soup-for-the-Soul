@@ -1,0 +1,25 @@
+{
+  "hash": "a2c35e4c",
+  "configHash": "c607923e",
+  "lockfileHash": "4cba119f",
+  "browserHash": "4b8e284d",
+  "optimized": {
+    "dayjs/locale/zh-cn": {
+      "src": "../../../../../node_modules/dayjs/locale/zh-cn.js",
+      "file": "dayjs_locale_zh-cn.js",
+      "fileHash": "a9d84edf",
+      "needsInterop": true
+    },
+    "lodash.debounce": {
+      "src": "../../../../../node_modules/lodash.debounce/index.js",
+      "file": "lodash__debounce.js",
+      "fileHash": "344b88bb",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-Y2F7D3TJ": {
+      "file": "chunk-Y2F7D3TJ.js"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "鸡汤列表",
+  "usingComponents": {
+    "uni-load-more": "../../uni_modules/uni-load-more/components/uni-load-more/uni-load-more",
+    "soup-item": "../../components/soup-item/soup-item",
+    "z-paging": "../../uni_modules/z-paging/components/z-paging/z-paging"
+  }
+}

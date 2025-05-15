@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "鸡圈",
+  "usingComponents": {
+    "uni-load-more": "../../uni_modules/uni-load-more/components/uni-load-more/uni-load-more",
+    "coop-item": "../../components/coop-item/coop-item",
+    "z-paging": "../../uni_modules/z-paging/components/z-paging/z-paging",
+    "uni-fab": "../../uni_modules/uni-fab/components/uni-fab/uni-fab"
+  }
+}

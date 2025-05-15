@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "审核鸡汤",
+  "usingComponents": {
+    "z-tabs": "../../uni_modules/z-tabs/components/z-tabs/z-tabs",
+    "soup-list": "../../components/soup-list/soup-list",
+    "z-paging-swiper": "../../uni_modules/z-paging/components/z-paging-swiper/z-paging-swiper"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/self/self",
+    "pages/detail/detail",
+    "pages/detail/reply",
+    "pages/login/login",
+    "pages/login/auto_login"
+  ],
+  "subPackages": [
+    {
+      "root": "pages_self",
+      "pages": [
+        "soup/edit",
+        "soup/list",
+        "user/edit",
+        "reviewed/list",
+        "score/list",
+        "like/list"
+      ]
+    },
+    {
+      "root": "pages_coop",
+      "pages": [
+        "index/index",
+        "write/add"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "鸡汤来喽",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#74dbef",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/home.png",
+        "selectedIconPath": "static/images/home-h.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/self/self",
+        "iconPath": "static/images/self.png",
+        "selectedIconPath": "static/images/self-h.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

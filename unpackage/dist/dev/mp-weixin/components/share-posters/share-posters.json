@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "l-painter-text": "../../uni_modules/lime-painter/components/l-painter-text/l-painter-text",
+    "l-painter-image": "../../uni_modules/lime-painter/components/l-painter-image/l-painter-image",
+    "l-painter-view": "../../uni_modules/lime-painter/components/l-painter-view/l-painter-view",
+    "l-painter": "../../uni_modules/lime-painter/components/l-painter/l-painter",
+    "uni-popup": "../../uni_modules/uni-popup/components/uni-popup/uni-popup"
+  }
+}

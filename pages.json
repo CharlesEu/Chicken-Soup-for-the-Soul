@@ -1,0 +1,144 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "鸡汤来喽",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/self/self",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的",
+				"enablePullDownRefresh" : false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/detail/detail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "鸡汤详情",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/detail/reply",
+			"style" : 
+			{
+				"navigationBarTitleText" : "回复",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/login/login",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/login/auto_login",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false,
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "pages_self",
+			"pages": [
+				{
+					"path": "soup/edit",
+					"style": {
+						"navigationBarTitleText":"熬制鸡汤"
+					}
+				},
+				{
+					"path": "soup/list",
+					"style": {
+						"navigationBarTitleText":"鸡汤列表"
+					}
+				},
+				{
+					"path": "user/edit",
+					"style": {
+						"navigationBarTitleText":"编辑个人资料"
+					}
+				},
+				{
+					"path": "reviewed/list",
+					"style": {
+						"navigationBarTitleText":"审核鸡汤"
+					}
+				},
+				{
+					"path": "score/list",
+					"style": {
+						"navigationBarTitleText":"我的积分"
+					}
+				},
+				{
+					"path": "like/list",
+					"style": {
+						"navigationBarTitleText":"我的喜欢"
+					}
+				}
+			]
+		},{
+			"root": "pages_coop",
+			"pages": [
+				{
+					"path": "index/index",
+					"style": {
+						"navigationBarTitleText": "鸡圈"
+					}
+				},{
+					"path": "write/add",
+					"style": {
+						"navigationBarTitleText": "新增圈子"
+					}
+				}
+			]
+		}
+	],
+	
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "鸡汤来喽",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#333",
+		"selectedColor": "#74dbef",
+		"list": [
+			{
+				"text": "首页",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/images/home.png",
+				"selectedIconPath": "static/images/home-h.png"
+			},{
+				"text": "我的",
+				"pagePath": "pages/self/self",
+				"iconPath": "static/images/self.png",
+				"selectedIconPath": "static/images/self-h.png"
+			}
+		]
+	},
+	"uniIdRouter": {
+		"loginPage": "pages/login/auto_login",
+		"needLogin": [
+			"pages/index/index",
+			"pages/self/.*",
+			"pages/detail/.*",
+			"pages_self/.*"
+		]
+	}
+}

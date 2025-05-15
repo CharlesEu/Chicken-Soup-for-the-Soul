@@ -1,0 +1,96 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.userLayout .avatar.data-v-bcc1b054 {
+  padding: 100rpx 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userLayout .avatar .box.data-v-bcc1b054 {
+  height: 150rpx;
+  width: 150rpx;
+  position: relative;
+}
+.userLayout .avatar .box .inner.data-v-bcc1b054 {
+  width: 100%;
+  height: 100%;
+}
+.userLayout .avatar .box .inner image.data-v-bcc1b054 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid #eee;
+}
+.userLayout .avatar .box .inner .btn.data-v-bcc1b054 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 0;
+}
+.userLayout .avatar .box .inner .mask.data-v-bcc1b054 {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22rpx;
+}
+.userLayout .avatar .box .icon.data-v-bcc1b054 {
+  width: 50rpx;
+  height: 50rpx;
+  background: #FE9468;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+.userLayout .avatar .box .text.data-v-bcc1b054 {
+  font-size: 25rpx;
+  color: #999;
+  white-space: nowrap;
+  padding: 20rpx 0;
+  text-align: center;
+}
+.userLayout .list.data-v-bcc1b054 {
+  padding: 50rpx 0rpx;
+}
+.genderForm .radio.data-v-bcc1b054 {
+  padding: 0 10rpx;
+}

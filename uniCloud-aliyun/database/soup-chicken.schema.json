@@ -1,0 +1,137 @@
+{
+	"bsonType": "object",
+	"required": [
+		"content",
+		"soup_type"
+	],
+	"permission": {
+		"read": "auth.uid != null",
+		"create": "auth.uid != null",
+		"update": "doc.user_id == auth.uid && doc.status == 2",
+		"delete": "doc.user_id == auth.uid"
+	},
+	"properties": {
+		"_id": {
+			"description": "存储文档 ID（用户 ID），系统自动生成"
+		},
+		"user_id": {
+			"bsonType": "string",
+			"description": "作者ID， 参考`uni-id-users` 表",
+			"foreignKey": "uni-id-users._id",
+			"defaultValue": {
+				"$env": "uid"
+			}
+		},
+		"review_uid":{
+			"bsonType": "string",
+			"description": "审核员ID， 参考`uni-id-users` 表",
+			"foreignKey": "uni-id-users._id"
+		},	
+		"is_delete":{
+			"bsonType": "bool",
+			"description": "是否被删除了",
+			"defaultValue":false
+		},
+		"content": {
+			"bsonType": "string",
+			"title": "鸡汤内容",
+			"trim": "both"
+		},
+		"from": {
+			"bsonType": "string",
+			"title": "鸡汤出处",
+			"trim": "both"
+		},
+		"soup_type": {
+			"bsonType": "int",
+			"title": "鸡汤类型",
+			"description": "鸡汤类型：0 毒鸡汤 1 心灵鸡汤",
+			"defaultValue": 0,
+			"enum": [{
+					"value": 0,
+					"text": "毒鸡汤"
+				},
+				{
+					"value": 1,
+					"text": "心灵鸡汤"
+				}
+			]
+		},
+		"view_count": {
+			"bsonType": "int",
+			"title": "阅读数量",
+			"description": "阅读数量",
+			"defaultValue": 18
+		},
+		"like_count": {
+			"bsonType": "int",
+			"description": "喜欢数、点赞数",
+			"defaultValue": 0
+		},
+		"comment_count": {
+			"bsonType": "int",
+			"description": "评论数量",
+			"defaultValue": 0
+		},
+		"collect_count": {
+			"bsonType": "int",
+			"description": "评论数量",
+			"defaultValue": 0
+		},
+		"status": {
+			"bsonType": "int",
+			"title": "鸡汤状态",
+			"description": "状态：0审核中  1审核通过  2审核不通过",
+			"defaultValue": 0,
+			"enum": [{
+					"value": 0,
+					"text": "审核中"
+				},
+				{
+					"value": 1,
+					"text": "审核通过"
+				},
+				{
+					"value": 2,
+					"text": "审核不通过"
+				}
+			]
+		},
+		"feedback": {
+			"bsonType": "string",
+			"title": "反馈内容",
+			"trim": "both"
+		},
+		"publish_date": {
+			"bsonType": "timestamp",
+			"title": "发表时间",
+			"description": "发表时间",
+			"defaultValue": {
+				"$env": "now"
+			}
+		},
+		"publish_ip": {
+			"bsonType": "string",
+			"title": "发布鸡汤时IP地址",
+			"forceDefaultValue": {
+				"$env": "clientIP"
+			}
+		},
+		"last_modify_date": {
+			"bsonType": "timestamp",
+			"title": "最后修改时间",
+			"description": "最后修改时间",
+			"defaultValue": {
+				"$env": "now"
+			}
+		},
+		"last_modify_ip": {
+			"bsonType": "string",
+			"description": "最后修改时 IP 地址",
+			"forceDefaultValue": {
+				"$env": "clientIP"
+			}
+		}
+	},
+	"version": "0.0.1"
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "我的喜欢",
+  "usingComponents": {
+    "soup-self": "../../components/soup-self/soup-self"
+  }
+}

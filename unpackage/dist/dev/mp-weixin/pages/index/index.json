@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "鸡汤来喽",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "home-head": "../../components/home-head/home-head",
+    "uni-load-more": "../../uni_modules/uni-load-more/components/uni-load-more/uni-load-more",
+    "soup-tab-group": "../../components/soup-tab-group/soup-tab-group",
+    "soup-text-content": "../../components/soup-text-content/soup-text-content",
+    "interactive-bar": "../../components/interactive-bar/interactive-bar",
+    "uni-popup": "../../uni_modules/uni-popup/components/uni-popup/uni-popup",
+    "share-posters": "../../components/share-posters/share-posters"
+  }
+}

@@ -1,0 +1,41 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"traceId":{
+			"bsonType": "string",
+			"title": "推送结果"
+		},		
+		"picurl":{
+			"bsonType": "string",
+			"title": "图片地址"
+		},
+		"quanzi_id":{
+			"bsonType": "string",
+			"title": "圈子ID"
+		},
+		"publish_date": {
+			"bsonType": "timestamp",
+			"title": "发表时间",
+			"description": "发表时间",
+			"defaultValue": {
+				"$env": "now"
+			}
+		},
+		"state":{
+			"bsonType":"int",
+			"description": "图片是否违规的状态", //0审核  1通过  -1违规
+			"defaultValue":0
+		}
+	}
+}

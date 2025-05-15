@@ -1,0 +1,55 @@
+# 鸡汤来喽小程序开发
+
+
+
+
+
+> ##  👀 微信扫码体验小程序
+
+![](https://cdn.qingnian8.com/public/myCloudPic/chicken-soup/soupCode.jpg)
+
+
+
+
+
+> ## 📦 简单部署即可商用
+
+### 1.将项目在HBuilder软件打开
+
+### 2.在项目根目录下执行安装依赖
+
+```
+npm install
+```
+
+### 3.在uniCloud文件目录单击右键“关联云服务空间”
+
+- 如果服务空间列表是空的，去新建一个'阿里云'的服务空间
+
+- 如果存在服务空间，对业务不熟练，最好还行选择新建一个空白的
+
+### 4.修改uni-id配置项，cloudfunctions->common->uni-config-center->uni-id->config.json
+
+修改"mp-weixin"下的"weixin"内的appid和appsecret；
+
+如果没有appid和appsecret，需要去注册  [https://mp.weixin.qq.com/](https://mp.weixin.qq.com/)
+
+### 5.对uniCloud内的两个目录cloudfunctions和database单击右键上传
+
+如果出现弹窗，提示云端已存在，一律选择覆盖即可
+
+### 6.根目录下找到manifest.json，点击‘微信小程序配置’，填入appid
+
+此步骤就是为了将uniCloud云端的appid和客户端的appid想统一，不统一会出现无法运行的错误。
+
+### 7.软件菜单，执行运行->运行到微信小程序模拟器
+
+如果不知道怎么配置，去学习一下视频：[运行各类小程序模拟器（传送门）](https://www.bilibili.com/video/BV1Yg4y127Fp?p=3)
+
+### 8.部署完成，可查看最终效果
+
+
+
+## 🚀 如果想要学习技术，可以看下面视频
+
+鸡汤来喽uniapp+uniCloud一体式微信小程序开发，[传送门](https://www.bilibili.com/video/BV1qJ4m1K7iN/)

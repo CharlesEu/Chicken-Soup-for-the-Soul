@@ -1,0 +1,138 @@
+{
+	"bsonType": "object",
+	"required": [		
+		
+	],
+	"permission": {
+		"read": "auth.uid != null",
+		"create": "auth.uid != null",
+		"update": "doc.user_id == auth.uid",
+		"delete": "doc.user_id == auth.uid"
+	},
+	"properties": {
+		"_id": {
+			"description": "存储文档 ID（用户 ID），系统自动生成"
+		},
+		"content": {
+			"bsonType": "string",
+			"title": "鸡圈内容",
+			"description": "鸡圈内容",
+			"label": "鸡圈内容",
+			"trim": "right"
+		},
+		"user_id": {
+			"bsonType": "string",
+			"description": "作者ID， 参考`uni-id-users` 表",
+			"foreignKey": "uni-id-users._id",
+			"defaultValue": {
+				"$env": "uid"
+			}
+		},
+		"excerpt": {
+			"bsonType": "string",
+			"title": "鸡圈摘录",
+			"description": "鸡圈摘录",
+			"label": "摘要",
+			"trim": "both"
+		},
+		"status": {
+			"bsonType": "int",
+			"title": "鸡圈状态",
+			"description": "鸡圈状态：0 草稿箱 1 已发布 -1审核不通过",
+			"defaultValue": 0,
+			"enum": [
+				{
+					"value": 0,
+					"text": "草稿箱"
+				},
+				{
+					"value": 1,
+					"text": "已发布"
+				},
+				{
+					"value": -1,
+					"text": "已违规"
+				}
+			]
+		},
+		"view_count": {
+			"bsonType": "int",
+			"title": "阅读数量",
+			"description": "阅读数量",
+			"defaultValue":59
+		},
+		"like_count": {
+			"bsonType": "int",
+			"description": "喜欢数、点赞数",
+			"defaultValue":0
+		},
+		"is_sticky": {
+			"bsonType": "bool",
+			"title": "是否置顶",
+			"description": "是否置顶",			
+			"defaultValue":false
+		},
+		"is_essence": {
+			"bsonType": "bool",
+			"title": "阅读加精",
+			"description": "阅读加精",			
+			"defaultValue":false
+		},
+		"is_delete":{
+			"bsonType": "bool",
+			"title": "是否被删除",
+			"defaultValue":false
+		},
+		"comment_status": {
+			"bsonType": "int",
+			"title": "开放评论",
+			"description": "评论状态：0 关闭  1 开放",
+			"enum": [
+				{
+					"value": 0,
+					"text": "关闭"
+				},
+				{
+					"value": 1,
+					"text": "开放"
+				}
+			]
+		},
+		"comment_count": {
+			"bsonType": "int",
+			"description": "评论数量",
+			"defaultValue":0
+		},
+		"last_comment_user_id": {
+			"bsonType": "string",
+			"description": "最后回复用户 id，参考`uni-id-users` 表",
+			"foreignKey": "uni-id-users._id"
+		},		
+		"picurls":{
+			"bsonType": "array",
+			"title": "图片组"
+		},
+		"publish_date": {
+			"bsonType": "timestamp",
+			"title": "发表时间",
+			"description": "发表时间",
+			"defaultValue": {
+				"$env": "now"
+			}
+		},
+		"publish_ip": {
+			"bsonType": "string",
+			"title": "发布鸡圈时IP地址",
+			"description": "发表时 IP 地址",
+			"defaultValue": {
+				"$env": "clientIP"
+			}
+		},
+		"publish_address":{
+			"bsonType": "string",
+			"title":"发布归属地",
+			"defaultValue":"未知"
+		}
+	},
+	"version": "0.0.1"
+}

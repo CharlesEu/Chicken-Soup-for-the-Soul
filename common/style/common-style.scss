@@ -1,0 +1,11 @@
+view,text,swiper,swiper-item,input,textarea{
+	box-sizing: border-box;
+}
+image{
+	width: 100rpx;
+	height: 100rpx;
+}
+.safe-area-bottom{
+  width: 100%;
+  height: env(safe-area-inset-bottom);
+}
